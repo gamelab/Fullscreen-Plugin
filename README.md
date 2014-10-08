@@ -1,7 +1,7 @@
 Fullscreen Plugin v1.0.0
 ==========================================
 
-This plugin brings the (HTML 5 FullScreen API)[https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Using_full_screen_mode] feature to Kiwi.JS. This plugin does its best to support as many browsers as it can (so if you spot a bug, or if it doesn't work in a particular browser/device then say so!), but beware that not all modern browsers fully supporting the API yet.
+This plugin brings the [HTML 5 FullScreen API](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Using_full_screen_mode) feature to Kiwi.JS. This plugin does its best to support as many browsers as it can (so if you spot a bug, or if it doesn't work in a particular browser/device then say so!), but beware that not all modern browsers fully supporting the API yet.
 
 
 *Doesn't work in CocoonJS:* This plugin is designed for browsers/devices that support the FullScreen API, and because of that it will not work in CocoonJS. If you are wanting Fullscreen support in CocoonJS, then Kiwi supports that normally. 

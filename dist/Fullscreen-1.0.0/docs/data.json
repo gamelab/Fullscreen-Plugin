@@ -1,0 +1,474 @@
+{
+    "project": {
+        "name": "Fullscreen",
+        "description": "This plugin brings the Fullscreen API to the Kiwijs.",
+        "version": "1.0.0",
+        "url": "http://kiwijs.org/"
+    },
+    "files": {
+        "src/fullscreen-1.0.0.js": {
+            "name": "src/fullscreen-1.0.0.js",
+            "modules": {
+                "Plugins": 1,
+                "Fullscreen": 1
+            },
+            "classes": {
+                "Kiwi.Plugins.Fullscreen": 1,
+                "Main": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "Kiwi.Plugins": 1
+            }
+        }
+    },
+    "modules": {
+        "Kiwi": {
+            "name": "Kiwi",
+            "submodules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {
+                "Kiwi.Plugins": 1
+            }
+        },
+        "Plugins": {
+            "name": "Plugins",
+            "submodules": {
+                "Plugins": 1,
+                "Fullscreen": 1
+            },
+            "classes": {
+                "Kiwi.Plugins.Fullscreen": 1,
+                "Main": 1
+            },
+            "fors": {},
+            "is_submodule": 1,
+            "namespaces": {
+                "Kiwi.Plugins": 1
+            },
+            "module": "Plugins",
+            "namespace": "",
+            "file": "src/fullscreen-1.0.0.js",
+            "line": 65,
+            "description": "Contains the Fullscreen Plugin."
+        },
+        "Fullscreen": {
+            "name": "Fullscreen",
+            "submodules": {},
+            "classes": {
+                "Kiwi.Plugins.Fullscreen": 1,
+                "Main": 1
+            },
+            "fors": {},
+            "is_submodule": 1,
+            "namespaces": {},
+            "module": "Plugins",
+            "namespace": "",
+            "file": "src/fullscreen-1.0.0.js",
+            "line": 65,
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "game",
+                    "description": "The game that this",
+                    "type": "Kiwi.Game"
+                }
+            ],
+            "description": "Contains the Fullscreen Plugin."
+        }
+    },
+    "classes": {
+        "Kiwi.Plugins.Fullscreen": {
+            "name": "Kiwi.Plugins.Fullscreen",
+            "shortname": "Kiwi.Plugins.Fullscreen",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Plugins",
+            "submodule": "Fullscreen",
+            "namespace": "Kiwi.Plugins",
+            "file": "src/fullscreen-1.0.0.js",
+            "line": 1,
+            "description": "Contains the Fullscreen Plugin."
+        },
+        "Main": {
+            "name": "Main",
+            "shortname": "Main",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Plugins",
+            "submodule": "Fullscreen",
+            "namespace": "",
+            "file": "src/fullscreen-1.0.0.js",
+            "line": 65
+        }
+    },
+    "classitems": [
+        {
+            "file": "src/fullscreen-1.0.0.js",
+            "line": 12,
+            "description": "The name of this plugin.",
+            "itemtype": "property",
+            "name": "name",
+            "type": "String",
+            "default": "'Fullscreen'",
+            "access": "public",
+            "tagname": "",
+            "class": "Kiwi.Plugins.Fullscreen",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins"
+        },
+        {
+            "file": "src/fullscreen-1.0.0.js",
+            "line": 22,
+            "description": "The version of this plugin.",
+            "itemtype": "property",
+            "name": "version",
+            "type": "String",
+            "default": "'1.0.0'",
+            "access": "public",
+            "tagname": "",
+            "class": "Kiwi.Plugins.Fullscreen",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins"
+        },
+        {
+            "file": "src/fullscreen-1.0.0.js",
+            "line": 32,
+            "description": "The minimum version of Kiwi.js required to run this plugin in semver (semantic versioning) format",
+            "itemtype": "property",
+            "name": "minimumKiwiVersion",
+            "type": "String",
+            "access": "public",
+            "tagname": "",
+            "class": "Kiwi.Plugins.Fullscreen",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins"
+        },
+        {
+            "file": "src/fullscreen-1.0.0.js",
+            "line": 50,
+            "description": "This create method is executed when Kiwi Game that has been told to use this plugin reaches the boot stage of the game loop.",
+            "itemtype": "method",
+            "name": "create",
+            "params": [
+                {
+                    "name": "game",
+                    "description": "The game that is current in the boot stage.",
+                    "type": "Kiwi.Game"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Kiwi.Plugins.Fullscreen",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins"
+        },
+        {
+            "file": "src/fullscreen-1.0.0.js",
+            "line": 77,
+            "description": "The game that this Fullscreen Plugin current exists on.",
+            "itemtype": "property",
+            "name": "game",
+            "type": "Kiwi.Game",
+            "access": "public",
+            "tagname": "",
+            "class": "Main",
+            "module": "Plugins",
+            "submodule": "Fullscreen"
+        },
+        {
+            "file": "src/fullscreen-1.0.0.js",
+            "line": 87,
+            "description": "If the Fullscreen API is support",
+            "itemtype": "property",
+            "name": "supported",
+            "type": "boolean",
+            "access": "public",
+            "tagname": "",
+            "class": "Main",
+            "module": "Plugins",
+            "submodule": "Fullscreen"
+        },
+        {
+            "file": "src/fullscreen-1.0.0.js",
+            "line": 97,
+            "description": "Used when checking to see if the Fullscreen API is supported.\nIf support is found, then this will maintain a reference to the correct method for requesting fullscreen.",
+            "itemtype": "property",
+            "name": "_requestFullscreen",
+            "type": "string",
+            "access": "private",
+            "tagname": "",
+            "class": "Main",
+            "module": "Plugins",
+            "submodule": "Fullscreen"
+        },
+        {
+            "file": "src/fullscreen-1.0.0.js",
+            "line": 108,
+            "description": "Used when checking to see if the Fullscreen API is supported.\nIf support is found, then this will maintain a reference to the correct method for canceling fullscreen.",
+            "itemtype": "property",
+            "name": "_cancelFullscreen",
+            "type": "string",
+            "access": "private",
+            "tagname": "",
+            "class": "Main",
+            "module": "Plugins",
+            "submodule": "Fullscreen"
+        },
+        {
+            "file": "src/fullscreen-1.0.0.js",
+            "line": 119,
+            "description": "When set to true, this will force Kiwi to recalculate the offset/scale of the container. \nImplemented currently as a fix, since changing css styles do not take effect immediately.",
+            "itemtype": "property",
+            "name": "_updateStage",
+            "type": "booleab",
+            "access": "private",
+            "tagname": "",
+            "class": "Main",
+            "module": "Plugins",
+            "submodule": "Fullscreen"
+        },
+        {
+            "file": "src/fullscreen-1.0.0.js",
+            "line": 130,
+            "description": "Dispatches events when the game enters fullscreen.",
+            "itemtype": "property",
+            "name": "onEnter",
+            "type": "Kiwi.Signal",
+            "access": "public",
+            "tagname": "",
+            "class": "Main",
+            "module": "Plugins",
+            "submodule": "Fullscreen"
+        },
+        {
+            "file": "src/fullscreen-1.0.0.js",
+            "line": 140,
+            "description": "Dispatches events when the game leaves fullscreen.",
+            "itemtype": "property",
+            "name": "onLeave",
+            "type": "Kiwi.Signal",
+            "access": "public",
+            "tagname": "",
+            "class": "Main",
+            "module": "Plugins",
+            "submodule": "Fullscreen"
+        },
+        {
+            "file": "src/fullscreen-1.0.0.js",
+            "line": 153,
+            "description": "If the game is currently in fullscreen mode or not. This is READ ONLY.",
+            "itemtype": "property",
+            "name": "isFullscreen",
+            "type": "boolean",
+            "access": "public",
+            "tagname": "",
+            "class": "Main",
+            "module": "Plugins",
+            "submodule": "Fullscreen"
+        },
+        {
+            "file": "src/fullscreen-1.0.0.js",
+            "line": 180,
+            "description": "Returns the width of the window. This is the innerWidth/Height of the browser.\nREAD ONLY.",
+            "itemtype": "property",
+            "name": "width",
+            "type": "boolean",
+            "access": "public",
+            "tagname": "",
+            "class": "Main",
+            "module": "Plugins",
+            "submodule": "Fullscreen"
+        },
+        {
+            "file": "src/fullscreen-1.0.0.js",
+            "line": 197,
+            "description": "Returns the height of the window. This is the innerWidth/Height of the browser.\nREAD ONLY.",
+            "itemtype": "property",
+            "name": "height",
+            "type": "boolean",
+            "access": "public",
+            "tagname": "",
+            "class": "Main",
+            "module": "Plugins",
+            "submodule": "Fullscreen"
+        },
+        {
+            "file": "src/fullscreen-1.0.0.js",
+            "line": 214,
+            "description": "Executed when the DOM and all core Game managers have been loaded.\nChecks for support of the fullscreen API.",
+            "itemtype": "method",
+            "name": "boot",
+            "access": "private",
+            "tagname": "",
+            "class": "Main",
+            "module": "Plugins",
+            "submodule": "Fullscreen"
+        },
+        {
+            "file": "src/fullscreen-1.0.0.js",
+            "line": 222,
+            "description": "A reference back to the container element that the game currently exists inside.",
+            "itemtype": "property",
+            "name": "container",
+            "type": "HTMLElement",
+            "access": "public",
+            "tagname": "",
+            "class": "Main",
+            "module": "Plugins",
+            "submodule": "Fullscreen"
+        },
+        {
+            "file": "src/fullscreen-1.0.0.js",
+            "line": 231,
+            "description": "The targeted element that the fullScreen API will apply to. \nThis will only take affect when the fullScreen API is supported, and if you change the targetted element then the game will not be constraited to the browser window.",
+            "itemtype": "property",
+            "name": "targetElement",
+            "type": "HTMLElement",
+            "access": "public",
+            "tagname": "",
+            "class": "Main",
+            "module": "Plugins",
+            "submodule": "Fullscreen"
+        },
+        {
+            "file": "src/fullscreen-1.0.0.js",
+            "line": 278,
+            "description": "Launches the game into Fullscreen mode.",
+            "itemtype": "method",
+            "name": "launchFullscreen",
+            "access": "public",
+            "tagname": "",
+            "class": "Main",
+            "module": "Plugins",
+            "submodule": "Fullscreen"
+        },
+        {
+            "file": "src/fullscreen-1.0.0.js",
+            "line": 298,
+            "description": "Exits the game from Fullscreen mode.",
+            "itemtype": "method",
+            "name": "exitFullscreen",
+            "access": "public",
+            "tagname": "",
+            "class": "Main",
+            "module": "Plugins",
+            "submodule": "Fullscreen"
+        },
+        {
+            "file": "src/fullscreen-1.0.0.js",
+            "line": 315,
+            "description": "Toggles the FullScreen state.",
+            "itemtype": "method",
+            "name": "toggleFullscreen",
+            "access": "public",
+            "tagname": "",
+            "class": "Main",
+            "module": "Plugins",
+            "submodule": "Fullscreen"
+        },
+        {
+            "file": "src/fullscreen-1.0.0.js",
+            "line": 333,
+            "description": "Executed when the fullscreen state changes. \nThis method is excuted by change events of the browser and should as such should not be called directly.",
+            "itemtype": "method",
+            "name": "_onChange",
+            "params": [
+                {
+                    "name": "event",
+                    "description": "",
+                    "type": "Event"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Main",
+            "module": "Plugins",
+            "submodule": "Fullscreen"
+        },
+        {
+            "file": "src/fullscreen-1.0.0.js",
+            "line": 357,
+            "description": "Called when an event that has affected the sizing of the Game during fullscreen has occured. \nThis method is charged with recalcuating any coordinates/styles needed.",
+            "itemtype": "method",
+            "name": "_checkPositionChanges",
+            "access": "private",
+            "tagname": "",
+            "class": "Main",
+            "module": "Plugins",
+            "submodule": "Fullscreen"
+        },
+        {
+            "file": "src/fullscreen-1.0.0.js",
+            "line": 372,
+            "description": "Recalculates and applys styles that need to occur onto the targetElement (only if the targetElement is the game container).\nNote that it is assumed that the browser is in fullscreen mode when this method is called. \nMethod used for internal calls only.",
+            "itemtype": "method",
+            "name": "_recalculateStyles",
+            "access": "private",
+            "tagname": "",
+            "class": "Main",
+            "module": "Plugins",
+            "submodule": "Fullscreen"
+        },
+        {
+            "file": "src/fullscreen-1.0.0.js",
+            "line": 410,
+            "description": "Recalculates the scale on the stage, which is used by the Pointer.\nThis is a workaround.",
+            "itemtype": "method",
+            "name": "_updateStageScale",
+            "access": "private",
+            "tagname": "",
+            "class": "Main",
+            "module": "Plugins",
+            "submodule": "Fullscreen"
+        },
+        {
+            "file": "src/fullscreen-1.0.0.js",
+            "line": 426,
+            "description": "Removes all styles that may have been applied because of going into fullscreen mode.",
+            "itemtype": "method",
+            "name": "_removeStyles",
+            "access": "private",
+            "tagname": "",
+            "class": "Main",
+            "module": "Plugins",
+            "submodule": "Fullscreen"
+        },
+        {
+            "file": "src/fullscreen-1.0.0.js",
+            "line": 437,
+            "description": "The update loop for this Plugin.",
+            "itemtype": "method",
+            "name": "update",
+            "access": "private",
+            "tagname": "",
+            "class": "Main",
+            "module": "Plugins",
+            "submodule": "Fullscreen"
+        },
+        {
+            "file": "src/fullscreen-1.0.0.js",
+            "line": 454,
+            "description": "Checks support of the fullscreen API. \nIf support is found, then it maintains the correct methods for enabling/disabling FullScreen.",
+            "itemtype": "method",
+            "name": "checkSupport",
+            "access": "public",
+            "tagname": "",
+            "class": "Main",
+            "module": "Plugins",
+            "submodule": "Fullscreen"
+        }
+    ],
+    "warnings": []
+}

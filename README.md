@@ -65,7 +65,14 @@ To close the fullscreen api you can use the 'exitFullscreen' method.
 
 	this.game.fullsceen.onEnter.add(this.functionToCallWhenFullscreenLaunches, this);
 	this.game.fullsceen.onLeave.add(this.functionToCallWhenFullscreenStopsAndWasOn, this);
-	
+
+
+###Width/Height of Screen
+To see the width/height of the screen. This can be used to can the dimensions of the game, when 'onEnter' method is executed.
+
+	this.game.fullscreen.width
+	this.game.fullscreen.height
+
 
 ----------------------------------------------------------------------------------------
 ##Contribute

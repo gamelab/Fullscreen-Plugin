@@ -29,7 +29,7 @@ KiwiJS last version test: 1.1.1
 
 Copy either the fullscreen-x.x.x.js or the fullscreen-x.x.x.min.js file (they should be in the src folder) into your project directory. We recommend that you save the files under a plugin directory that lives inside of your project directory so that you can easily manage all of the plugins but that is not required.
 
-Then link in the JavaScript file fullscreen-x.x.x.js (or the min version of the file) into your HTML file. Make sure you link it in underneath the link to the main Kiwi.js file AND underneath the Cocoon files.
+Then link in the JavaScript file fullscreen-x.x.x.js (or the min version of the file) into your HTML file. Make sure you link it in underneath the link to the main Kiwi.js file.
 
 Now that the plugin is included, the next step is to tell the game to use this plugin. To do so you need to add the name of the plugin ('Fullscreen') to the game objects 'plugin' property on its configuration object. Example below.
 
